@@ -6,13 +6,13 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'AdicionarCondominioTabelaUnidades' => $baseDir . '/database/migrations/2019_08_31_133918_adicionar_condominio_tabela_unidades.php',
     'ArithmeticError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
     'AssertionError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
     'CreatePasswordResetsTable' => $baseDir . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
     'CreateUsersTable' => $baseDir . '/database/migrations/2014_10_12_000000_create_users_table.php',
-    'CriarTabelaCondominios' => $baseDir . '/database/migrations/2019_08_31_131528_criar_tabela_condominios.php',
-    'CriarTabelaUnidades' => $baseDir . '/database/migrations/2019_08_31_132212_criar_tabela_unidades.php',
+    'CriarTabelaAreas' => $baseDir . '/database/migrations/2019_09_11_011232_criar_tabela_areas.php',
+    'CriarTabelaCondominio' => $baseDir . '/database/migrations/2019_09_11_012757_criar_tabela_condominio.php',
+    'CriarTabelaUnidades' => $baseDir . '/database/migrations/2019_09_11_013319_criar_tabela_unidades.php',
     'DatabaseSeeder' => $baseDir . '/database/seeds/DatabaseSeeder.php',
     'DivisionByZeroError' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
     'Error' => $vendorDir . '/symfony/polyfill-php70/Resources/stubs/Error.php',

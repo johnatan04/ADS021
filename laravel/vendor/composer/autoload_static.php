@@ -43,8 +43,6 @@ class ComposerStaticInitecd796b3f3819017d5e58f1867042462
             'Symfony\\Polyfill\\Php70\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Polyfill\\Ctype\\' => 23,
-            'Symfony\\Contracts\\Translation\\' => 30,
-            'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Component\\Yaml\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\Translation\\' => 30,
@@ -142,14 +140,6 @@ class ComposerStaticInitecd796b3f3819017d5e58f1867042462
         'Symfony\\Polyfill\\Ctype\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
-        ),
-        'Symfony\\Contracts\\Translation\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/translation-contracts',
-        ),
-        'Symfony\\Contracts\\EventDispatcher\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
         ),
         'Symfony\\Component\\Yaml\\' => 
         array (
@@ -302,13 +292,13 @@ class ComposerStaticInitecd796b3f3819017d5e58f1867042462
     );
 
     public static $classMap = array (
-        'AdicionarCondominioTabelaUnidades' => __DIR__ . '/../..' . '/database/migrations/2019_08_31_133918_adicionar_condominio_tabela_unidades.php',
         'ArithmeticError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/ArithmeticError.php',
         'AssertionError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/AssertionError.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',
-        'CriarTabelaCondominios' => __DIR__ . '/../..' . '/database/migrations/2019_08_31_131528_criar_tabela_condominios.php',
-        'CriarTabelaUnidades' => __DIR__ . '/../..' . '/database/migrations/2019_08_31_132212_criar_tabela_unidades.php',
+        'CriarTabelaAreas' => __DIR__ . '/../..' . '/database/migrations/2019_09_11_011232_criar_tabela_areas.php',
+        'CriarTabelaCondominio' => __DIR__ . '/../..' . '/database/migrations/2019_09_11_012757_criar_tabela_condominio.php',
+        'CriarTabelaUnidades' => __DIR__ . '/../..' . '/database/migrations/2019_09_11_013319_criar_tabela_unidades.php',
         'DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeds/DatabaseSeeder.php',
         'DivisionByZeroError' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/DivisionByZeroError.php',
         'Error' => __DIR__ . '/..' . '/symfony/polyfill-php70/Resources/stubs/Error.php',
