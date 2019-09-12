@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CriarTabelaCondominio extends Migration
+class CriarTabelaCondominios extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,10 @@ class CriarTabelaCondominio extends Migration
      */
     public function up()
     {
-        Schema::create('condominio', function (Blueprint $table) {
+        Schema::create('condominios', function (Blueprint $table) {
             $table->increments('id');
             $table->String('nome');
-            $table->intenger('cnpj');
+            $table->integer('cnpj');
             $table->String('endereco');
             $table->integer('cep');
             $table->String('bairro');
@@ -34,6 +34,6 @@ class CriarTabelaCondominio extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('condominio');
+        Schema::dropIfExists('condominios');
     }
 }

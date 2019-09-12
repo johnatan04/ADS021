@@ -16,7 +16,7 @@ class CriarTabelaUnidades extends Migration
         Schema::create('unidades', function (Blueprint $table) {
             $table->increments('id');
              $table->String('numerounidade');
-            $table->intenger('proprietario');
+            $table->integer('proprietario');
             $table->String('cpf');
             $table->integer('email');
             $table->String('telefone');
