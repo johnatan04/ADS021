@@ -15,13 +15,13 @@ class CriarTabelaCondominios extends Migration
     {
         Schema::create('condominios', function (Blueprint $table) {
             $table->increments('id');
-            $table->String('nome');
-            $table->integer('cnpj');
-            $table->String('endereco');
-            $table->integer('cep');
-            $table->String('bairro');
-            $table->String('cidade');
-            $table->String('uf');
+            $table->string('nome',100);
+            $table->string('cnpj', 14);
+            $table->string('endereco', 100);
+            $table->string('cep')->unsigned();
+            $table->string('bairro',30);
+            $table->string('cidade',30);
+            $table->string('uf', 2);
            
             $table->timestamps();
         });
