@@ -24,10 +24,11 @@ class AreaController extends Controller
     public function  salvar(request $request){
         $area = new Area();
          if ($request->has('id')){
-             $area = Area::find($id);
+             $area = Area::find($request->id);
          }
          $area->local = $request->local;
          $area->situacao = $request->situacao;
+         $area->condominio_id=$request->condominio_id;
          $area->save();
          return redirect('area/listar');
          

@@ -16,7 +16,7 @@ class CriarTabelaAreas extends Migration {
             $table->increments('id');
             $table->string('local');
             $table->boolean('situacao');
-$table->integer('condominio_id')->unsigned();
+            $table->integer('condominio_id')->unsigned();
             $table->foreign('condominio_id')->references('id')->on('condominios');
             $table->timestamps();
         });
