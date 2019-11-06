@@ -8,13 +8,14 @@ use Illuminate\Http\Request;
 class AreaController extends Controller
 {
     public function listar(){
-        return Area::all();
+        return view('area.listar',['areas'=> Area::paginate(5)]);
     }
     public function  criar(){
-        
+        return view('area.criar');
     }
     public function editar($id){
-      return Area::find($id);  
+       
+      return view('area.editar',['area'=>Area::find($id)]);
     }
     public function remover($id){
         $area = Area::find($id);
