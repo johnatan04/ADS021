@@ -7,10 +7,15 @@ use Illuminate\Http\Request;
 
 class AreaController extends Controller
 {
+    public function __construct() {
+        //$this->middleware('auth');
+    }
+
     public function listar(){
         return view('area.listar',['areas'=> Area::paginate(5)]);
     }
     public function  criar(){
+        $condominios
         return view('area.criar');
     }
     public function editar($id){

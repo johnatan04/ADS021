@@ -13,5 +13,5 @@ Route::get('listar', 'AreaController@listar');
 Route::get('criar', 'AreaController@criar');
 Route::get('{id}/editar', 'AreaController@editar');
 Route::get('{id}/remover', 'AreaController@remover');
-Route::get('salvar', 'AreaController@salvar');
+Route::post('salvar', 'AreaController@salvar');
 });
