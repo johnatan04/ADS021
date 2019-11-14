@@ -16,7 +16,7 @@
                     @endif
                     <form action="{{ url('area/salvar')}}" method="post">
                     {{ csrf_field() }}
-
+                    <input type="hidden" name="id" value="{{$area->id}}"/>
                     <div class="input-group"> 
                         <label>Condominio:</label>
                         <select name='condominio_id'>
@@ -29,7 +29,7 @@
 
                     <div class="input-group"> 
                         <label>local:</label>
-                        <input type="text" class="text-primary" name="local">
+                        <input type="text" class="text-primary" name="local" value="{{$area->local}}"/>
                 </div>
                     <div class="input-group"> 
                         <label>Situacao:</label>

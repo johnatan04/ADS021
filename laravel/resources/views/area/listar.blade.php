@@ -14,13 +14,14 @@
                                <th>local</th>
                                <th>situacao</th>
                                <th>local</th>
-                               @foreach($areas as $area)
                            </tr> 
-                           <d>{{ $area->local}}</d>
-                           <td>$area->situacao}}</td>
-                           <td><a href="{{url('area/'.$area->id.'/editar')}}"class="btn btn-primary">Editar</a>
-                           <td><a href="{{url('area/'.$area->id.'/remover')}}" class="btn btn-danger" onclick="return"></a>
-                      </tr>
+                           @foreach($areas as $area)
+                           <tr>
+                               <td>{{ $area->local}}</td>
+                           <td>{{$area->situacao ? "Ativo" : "Inativo" }}</td>
+                           <td><a href="{{url('area/'.$area->id.'/editar')}}" class="btn btn-primary">Editar</a>
+                               <a href="{{url('area/'.$area->id.'/remover')}}" class="btn btn-danger" onclick="return confirm('deseja remover')">Remover</a></td>
+                           </tr>                                                 
                       @endforeach
                       </table>
                        {{$areas->links()}}
